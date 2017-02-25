@@ -1,6 +1,6 @@
 {
   "name": "rut-verifier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "chilean RUT verifier - verificador RUT chileno",
   "main": "index.js",
   "scripts": {
