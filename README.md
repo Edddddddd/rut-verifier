@@ -1,6 +1,6 @@
 # rut-verifier
 
-[![Build Status](https://travis-ci.org/flakolefluk/rut-verifier.svg?branch=master)](https://travis-ci.org/flakolefluk/rut-verifier)
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url] [![Build Status](https://travis-ci.org/flakolefluk/rut-verifier.svg?branch=master)](https://travis-ci.org/flakolefluk/rut-verifier)
 
 ## Synopsis
 This module will help you verify chilean RUTs (Rol Único Tributario).
