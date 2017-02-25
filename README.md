@@ -30,8 +30,7 @@ npm install rut-verifier --save
 
 ## Tests
 
-Mocha and Chai are used for testing./n
-To run the tests:
+Mocha and Chai are used for testing. To run the tests:
 ```
 npm test
 ```
