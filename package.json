@@ -1,0 +1,23 @@
+{
+  "name": "rut-verifier",
+  "version": "1.0.0",
+  "description": "chilean RUT verifier - verificador RUT chileno",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flakolefluk/rut-verifier.git"
+  },
+  "keywords": [
+    "RUT",
+    "chile"
+  ],
+  "author": "Ignacio Falk <flakolefluk@gmail.com> (http://ignaciofalk.herokuapp.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
