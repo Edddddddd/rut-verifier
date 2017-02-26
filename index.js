@@ -8,11 +8,11 @@ exports.verify = function (rut, cb) {
 
 // check if rut only contains numbers
   if (!rut.match(/^[0-9]+([0-9]|k|K)$/)) {
-    return cb(null, 'Input contains invalid characters')
+    return cb('Input contains invalid characters', null)
   }
 
   if (rut.length !== 9 && rut.length !== 8) {
-    return cb(null, 'Invalid RUT length')
+    return cb('Invalid RUT length', null)
   } else {
     var sum = 0
     var revRut = rut.split('').reverse().join('')
@@ -24,21 +24,21 @@ exports.verify = function (rut, cb) {
 
     if (value > 0 && value <= 9) {
       if (value.toString() === revRut[0]) {
-        return cb(true, null)
+        return cb(null, true)
       } else {
-        return cb(false, null)
+        return cb(null, false)
       }
     } else if (value === 10) {
       if (revRut[0] === 'K' || revRut[0] === 'k') {
-        return cb(true, null)
+        return cb(null, true)
       } else {
-        return cb(false, null)
+        return cb(null, false)
       }
     } else if (value === 11) {
       if (revRut[0] === '0') {
-        return cb(true, null)
+        return cb(null, true)
       } else {
-        return cb(false, null)
+        return cb(null, false)
       }
     }
   }

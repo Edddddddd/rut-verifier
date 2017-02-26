@@ -5,13 +5,17 @@
 ## Synopsis
 This module will help you verify chilean RUTs (Rol Único Tributario).
 
+## Breaking Changes in 2.0.0
+
+-Function callback is now in a standard format (error first callback).
+
 ## Code Example
 
 Sample usage:
 ```
-var rut = require('rut-verifier')
+var rutVerifier = require('rut-verifier')
 
-rut.verify('198765430', function (isValid, err) {
+rutVerifier.verify('198765430', function (err, isValid) {
   if (err) {
     return console.error(err)
   }
