@@ -25,6 +25,13 @@ rutVerifier.verify('198765430', function (err, isValid) {
     console.log('INVALID RUT')
   }
 })
+
+rutVerifier.getDigit(19876543, function(err, digit){
+  if(err){
+    return console.error(err)
+  }
+  console.log(digit) //0
+})
 ```
 
 ## Installation
