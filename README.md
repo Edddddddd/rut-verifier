@@ -1,5 +1,7 @@
 # rut-verifier
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/flakolefluk/rut-verifier.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/rut-verifier.svg)](https://badge.fury.io/js/rut-verifier) [![Build Status](https://travis-ci.org/flakolefluk/rut-verifier.svg?branch=master)](https://travis-ci.org/flakolefluk/rut-verifier)
 
 ## Synopsis
