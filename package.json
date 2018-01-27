@@ -4,7 +4,8 @@
   "description": "chilean RUT verifier - verificador RUT chileno",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
