@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,15 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "mocha": "^5.0.0",
     "semantic-release": "^12.2.5",
     "travis-deploy-once": "^4.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
