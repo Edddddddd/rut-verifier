@@ -43,7 +43,7 @@ exports.verify = function (rut) { return __awaiter(_this, void 0, void 0, functi
         switch (_a.label) {
             case 0:
                 // trim and remove dots and dashes
-                rut = exports.format(rut);
+                rut = format(rut);
                 // check if rut only contains numbers
                 if (!rut.match(/^([0-9]{7}|[0-9]{8})([0-9]|k)$/)) {
                     throw new Error('Input contains invalid characters');
@@ -61,7 +61,7 @@ exports.verify = function (rut) { return __awaiter(_this, void 0, void 0, functi
         }
     });
 }); };
-exports.format = function (rut) {
+var format = function (rut) {
     rut = rut
         .toString()
         .trim()
@@ -73,7 +73,7 @@ exports.format = function (rut) {
 exports.getDigit = function (incompleteRut) { return __awaiter(_this, void 0, void 0, function () {
     var sum, revRut, i, value;
     return __generator(this, function (_a) {
-        incompleteRut = exports.format(incompleteRut);
+        incompleteRut = format(incompleteRut);
         // check if incompleteRut only contains numbers
         if (!incompleteRut.match(/^[0-9]+$/)) {
             throw new Error('Input contains invalid characters');
