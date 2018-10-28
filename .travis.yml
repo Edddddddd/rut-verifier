@@ -4,14 +4,5 @@ node_js:
   - 10
   - 8
 
-os:
-  - osx
-
 script:
   - npm run test
-
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - npm run travis-deploy-once "npm run semantic-release"
