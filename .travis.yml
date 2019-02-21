@@ -4,5 +4,19 @@ node_js:
   - 10
   - 8
 
-script:
-  - npm run test
+jobs:
+  include:
+    - stage: tests
+      script: npm run test
+    - stage: build
+      script: npm run build
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run semantic-release
