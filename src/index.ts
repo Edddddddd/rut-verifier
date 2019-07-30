@@ -59,3 +59,21 @@ export const getDigit = async (incompleteRut: Rut): Promise<string> => {
     }
   }
 };
+
+export const split = async (rut: Rut): Promise<[string, string]> => {
+  try {
+    const isValid = await verify(rut);
+    if (!isValid) {
+      throw new Error('Invalid RUT');
+    }
+  } catch (e) {
+    throw e;
+  }
+
+  const formatted = format(rut);
+
+  return [
+    formatted.slice(0, formatted.length - 1),
+    formatted.slice(formatted.length - 1)
+  ];
+};
