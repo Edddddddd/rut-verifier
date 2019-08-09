@@ -24,7 +24,7 @@
   "author": "Ignacio Falk <flakolefluk@gmail.com> (http://ignaciofalk.herokuapp.com/)",
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "^4.1.7",
+    "@types/chai": "^4.2.0",
     "@types/mocha": "^5.2.6",
     "@types/node": "^12.6.8",
     "chai": "^4.2.0",
