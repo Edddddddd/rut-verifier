@@ -21,7 +21,7 @@
     "RUT",
     "chile"
   ],
-  "author": "Ignacio Falk <flakolefluk@gmail.com> (http://ignaciofalk.herokuapp.com/)",
+  "author": "Ignacio Falk <flakolefluk@gmail.com> (https://flakolefluk.dev)",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.1.7",
