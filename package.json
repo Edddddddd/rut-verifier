@@ -4,9 +4,6 @@
   "description": "chilean RUT verifier - verificador RUT chileno",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsc",
     "test": "mocha --require ts-node/register ./test/*.spec.ts",
