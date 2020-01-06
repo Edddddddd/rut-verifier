@@ -49,7 +49,7 @@ export const getDigit = async (incompleteRut: Rut): Promise<string> => {
       sum = sum + parseInt(revRut[i]) * multipliers[i];
     }
     var value = 11 - (sum % 11);
-    if (value > 0 && value <= 9) {
+    if (0 < value && value <= 9) {
       return value.toString();
     } else if (value === 10) {
       return 'k';
